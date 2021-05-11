@@ -1,50 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            height: 2000px;
-        }
-        /* .container{
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            z-index: 5;
-        }
-        .container2{
-            position: absolute;
-            width: 100vw;
-            height: 110vh;
-            overflow: scroll;
-            z-index: 9;
-        }
-        .img{
-            
-            width:100%;
-            height:auto;
-            top:0;
-            left: 0;
-            z-index: 1;
-        } */
-        .fixed{
-            position: fixed;
-            bottom: 0;
-            width:100%;
-            height:auto;
-            
-            z-index: 9;
-            transition: all 1s;
-        }
-        .hide {
-            opacity:0;
-            right:-100%;
-        }
-        .show {
-            opacity:1;
-            right:0;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <div class="container2">
@@ -53,20 +10,6 @@
         </div>
         <img id="myID" class="fixed hide" src="fixed.png">
     </div>
-    
-    <script>
-        myID = document.getElementById("myID");
-
-        myScrollFunc = function () {
-            var y = window.scrollY;
-            if (y >= 500) {
-                myID.className = "fixed show"
-            } else {
-                myID.className = "fixed hide"
-            }
-        };
-
-        window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="js.js"></script>
 </body>
 </html>

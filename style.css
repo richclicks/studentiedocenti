@@ -1,0 +1,39 @@
+body {
+    min-height: 2000px;
+}
+/* .container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+.container2{
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    overflow: scroll;
+    z-index: 9;
+} */
+.img{
+    width:1680px;
+    height:auto;
+    top:0;
+    left: 0;
+    z-index: 1;
+} 
+.fixed{
+    position: fixed;
+    bottom: 0;
+    width:1680px;
+    height:auto;
+    z-index: 9;
+    transition: all 1s;
+}
+.hide {
+    opacity:0;
+    right:-100%;
+}
+.show {
+    opacity:1;
+    right:0;
+}
