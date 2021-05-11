@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 5;
+        }
+        .container2{
+            position: absolute;
+            width: 100vw;
+            height: 110vh;
+            overflow: scroll;
+            z-index: 9;
+        }
+        .img{
+            
+            width:100%;
+            height:auto;
+            top:0;
+            left: 0;
+            z-index: 1;
+        }
+        .fixed{
+            position: fixed;
+            width:100%;
+            height:auto;
+            z-index: 9;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="container">
+            <img class="img" src="home.jpg">
+        </div>
+    
+        <img class="fixed" src="fixed.png">
+    </div>
+</body>
+</html>
